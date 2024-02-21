@@ -1,0 +1,257 @@
+login.html 91-111
+
+<div class="contact-form">
+                        <form id="loginForm" onsubmit="handleSubmit(event)">
+
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email address" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="inputPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                                <div class="invalid-feedback">
+                                    Password must be at least 8 characters long.
+                                </div>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input type="checkbox" class="form-check-input" id="formCheck">
+                                <label class="form-check-label" for="formCheck">Remember Me</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id ="loginButton">Login</button>
+
+                        </form>
+
+                    </div>
+
+
+
+
+
+                    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Your HTML content -->
+
+    <script>
+        // Function to validate email
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (username === 'littleflowerg06@gmail.com') {
+                 alert('Login successful!');
+                 return emailRegex.test(email);
+                // Redirect to another page or perform other actions as needed
+                } else {
+                alert('Invalid username or password. Please try again.');
+                }
+            //return emailRegex.test(email);
+        }
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the values of email and password input fields
+            const email = document.getElementById('inputEmail').value;
+            const password = document.getElementById('inputPassword').value;
+
+            // Perform validation
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+//            else{
+//                if (username === 'littleflowerg06@gmail.com') {
+//                 alert('Login successful!');
+//                // Redirect to another page or perform other actions as needed
+////                } else {
+//                alert('Invalid username or password. Please try again.');
+//                }
+            
+
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return;
+            }
+
+            // If validation passes, you can proceed to the next step
+            alert('Form submitted successfully!');
+
+
+      // Check if the entered username and password match the fixed values
+      //if (username === 'littleflowerg06@gmail.com' && password === 'PSMS12') {
+        //alert('Login successful!');
+        // Redirect to another page or perform other actions as needed
+      //} else {
+        //alert('Invalid username or password. Please try again.');
+     // }
+
+            // Redirect to a new page (change 'nextPage.html' to your desired page)
+            window.location.href = '2nd page.html';
+        }
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="text-danger"><b>SRI PALANI AANDAVAR </b></span> <b>MEDICALS </b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="loc.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teams and condition.html">Terms and Conditions</a>
+              </li>
+        
+            
+              
+              
+            </ul>
+            
+                      
+              
+            
+            
+          </div>
+        </div>
+      </nav>
+
+    <div class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                        <h2><span>login</span>page</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class ="col-md-6 col-sm-12 col-xs-12">
+                <div class="contact-form">
+                            <form id="loginForm" onsubmit="handleSubmit(event)">
+                              <div class="mb-4">
+                                <label for="inputEmail" >Username</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email address" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                              </div>
+                              <div class="mb-4">
+                                <label for="inputPassword" >Password</label>
+                                <input type="password" class="form-control" id="inputPassword"placeholder="Password"  required>
+                                <div class="invalid-feedback">
+                                    Password must be at least 8 characters long.
+                                </div>
+                              </div>
+
+                              <div class="form-check mb-4">
+                                <input type="checkbox" class="form-check-input" id="formCheck">
+                                <label class="form-check-label" for="formCheck">Remember Me</label>
+                            </div>
+
+                              <button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+<script>
+    function validateLogin() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+  
+      // Check if the entered username and password match the fixed values
+      if (username === 'littleflowerg06@gmail.com' && password === 'PSMS12') {
+        alert('Login successful!');
+        // Redirect to another page or perform other actions as needed
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    }
+  </script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+if(mysqli_num_rows($q2)>0){
+  $row=mysqli_fetch_assoc($q2);
+  if(ProdID==$row['id']){
+      echo"Exists";
+  }
+  else{
+$query1=mysqli_query($dbc,"INSERT INTO inventory SELECT ProdID,Name,ProdType,BatchNo,Expiry,Quantity,Price,SuppID FROM purchase");
+echo"Copied";
+  }
+}
+   else {
+  echo "Error inserting record into Purchase table: " . $dbc->error;
+}
+
+<html>
+<head><h1><center>VIEW SALES</center></h1></head>
+    <style>
+        /* CSS to center-align the table */
+        table {
+            margin: 0 auto;
+        }
+        body
+        { 
+            background-image: url('phacem.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+
+        }
+    </style>
+<head>
+<body>
+<?php
+$dbc=mysqli_connect("localhost","root","","psms");
+if($dbc)
+$query="SELECT * FROM sales ";
+$q2=mysqli_query($dbc,$query);
+#echo"<div style=\"text-align:center\">";
+echo '<table border="1" cellspacing="4" cellpadding="12"><tr><th>Sales ID</th><th>Product ID</th><th>Name</th><th>Sales Date</th><th>Quantity Sold</th><th>Price</th><tr>';
+while($row=mysqli_fetch_array($q2))
+{
+echo '<tr><td>'.$row[0].'</td>';
+echo '<td>'.$row[1].'</td>';
+echo '<td>'.$row[2].'</td>';
+echo '<td>'.$row[3].'</td>';
+echo '<td>'.$row[4].'</td>';
+echo '<td>'.$row[5].'</td></tr>';
+}
+echo '</table>';
+mysqli_close($dbc);
+?>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Supplier</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0bd9d;
+padding: 20px;
+}
+form {
+max-width: 500px;
+margin: 0 auto;
+background: linear-gradient(to bottom right, #fff, #f1f1f1);
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+display: block;
+margin-bottom: 10px;
+font-weight: bold;
+}
+.form-row {
+margin-bottom: 20px;
+}
+.form-row label {
+display: block;
+margin-bottom: 5px;
+}
+.form-row input,
+.form-row select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 14px;
+}
+input[type="submit"] {
+padding: 10px 20px;
+background: linear-gradient(to bottom right, #db4340, #309892);
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+}
+</style>
+</head>
+<body>
+<form method="POST" action="demo.php">
+<div class="form-row">
+    <div class="form-row">
+        <label for="name">Product ID</label>
+        <input type="text" id="pid" name="pid"required>
+        </div>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+*{
+    font-family: montserrat;
+}
+body{
+    background: f1fbff;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    top: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    color:#000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    color: #000;
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: Orgba(0,0,0,0.0);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    }
+.navbar-Light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-Light .navbar-brand:focus,
+.navbar-Light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-Light .navbar-nav .navbar-link{
+    color: #000;
+}
+.W-100{
+    height: 100vh;
+}
+
+
+
+.services .card-body i{
+    font-size: 50px;
+}
+/* Optional: Adjust carousel height */
+#carouselExampleCaptions {
+    height: 400px;
+}
+
+/* Optional: Center carousel indicators */
+.carousel-indicators {
+    justify-content: center;
+}
+
+/* Optional: Style carousel caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+}
+
+.carousel-caption .btn {
+    font-size: 1.2em;
+}
+
+/* Optional: Adjust carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url('path_to_your_icon.png');
+}
+
+/* Optional: Style carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+    width: auto;
+    background: rgba(0, 0, 0, 0.0);
+    border: none;
+    padding: 10px;
+}
+
+/* Optional: Adjust position of carousel control buttons */
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
